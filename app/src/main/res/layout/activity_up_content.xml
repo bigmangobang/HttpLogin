@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.UpContent">
+
+    <RelativeLayout
+        android:id="@+id/topPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/btn_back"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_toRightOf="@+id/back"
+            android:text="发表文字"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/insert_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:text="发表"
+            android:textColor="#1e9f24"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/content_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topPanel"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_edit"
+        android:gravity="start"
+        android:hint="这一刻的想法... ..."
+        android:lines="8" />
+
+    <TextView
+        android:id="@+id/choose_phone"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_below="@+id/content_editText"
+        android:background="@drawable/insert_phone" />
+
+    <ImageButton
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content_editText"
+        android:layout_toRightOf="@+id/choose_phone"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
